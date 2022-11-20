@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head_img:hover .me {
+            visibility: visible;
+            font-size: large;
+            border: white solid 2px;
+            border-radius: 5px;
+        }
+
+        header .me {
+            visibility: hidden;
+        }
+
+        #name {
+            font-size: 50px;
+        }
+
+        #Sanket_Image {
+            border: white 5px solid;
+            border-radius: 130px;
+            height: 250px;
+            width: 250px;
+        }
+
+        body {
+            background-image: linear-gradient(#43cea2, #185a9d);
+            margin-left: 2%;
+            margin-right: 2%;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 70%;
+        }
+
+        .footer_table{
+            width: 70%;
+        }
+
+        table p {
+            margin-left: 10%;
+        }
+
+        .info{
+            font-size: x-large;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .main {
+            font-size: large;
+        }
+
+        .main img:hover {
+            border: solid 8px white;
+            border-radius: 10px;
+        }
+
+        .sub-social input:hover {
+            border: solid 5px white;
+            border-radius: 10px;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        .sub-social input {
+            float : left;
+            padding: 10px;
+            height: 40px;
+            margin: 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head_img">
+            <table class="head_table">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <img id="Sanket_Image" src="S:\Sanket\My Web\Image\Sanket_Image.jpg" alt="Sanket">
+                        </td>
+                        <td>
+                            <span class="me">&nbsp;&nbsp;&nbsp;This is me&nbsp;&nbsp;&nbsp;</span>
+                            <p id="name" align="left">Sanket Sadadiya</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="info">
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi
+                there, My name is Sanket, I am student and learning about web development currently this is my first
+                website hope you'll like it, In this website i have shown somethings about me if you have any
+                suggestions than please let me know.</p>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <table class="main_table" align="center">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="S:\Sanket\My Web\Image\Programmer.jpg" alt="chess">
+                        </td>
+                        <td>
+                            <p align="justify">I am a student in Information technology i am learning stuff like how to build a website,
+                                security threats and precautions, how an OS works etc.
+                                <br>
+                                In college i have learnt HTML, CSS, 4 programming languages C, C++, Java, C# and MySQL
+                                database, But i have basic knowledge only still don't know very much about it.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="S:\Sanket\My Web\Image\Pushup_Image.jpg" alt="chess">
+                        </td>
+                        <td>
+                            <p align="justify">I like to execise to i love physical activities and games sometimes i do yoga for
+                                streching after exercise.
+                                <br>
+                                Even though i like to do exercise i don't do sometimes you know it's hard to be
+                                consistent but everyday i try to do it anyway.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="S:\Sanket\My Web\Image\Chess_Logo.jpg" alt="chess">
+                        </td>
+                        <td>
+                            <p align="justify">I am a Chess Player too, but not that much good LOL i am playing chess everyday may be
+                                one day i'll become so much better than now.
+                                <br>
+                                By the way i have rating something like 1350 in chess it changes everyday you can find
+                                me on <a href="https://www.chess.com/">chess.com</a> where my username is
+                                "@SanketSadadiya53".
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="S:\Sanket\My Web\Image\Coders_Territory.jpg" alt="chess">
+                        </td>
+                        <td>
+                            <p align="justify">The logo you are watching is second instagram page of mine, i mean it's not totally mine
+                                this page is handled by 4 people.
+                                <br>
+                                This page is used to share information about the technologies used for software
+                                development and we share memes too, check out this page <a
+                                    href="https://www.instagram.com/coders_territory/">@coders_territory</a> if you find
+                                it useful it's worth to follow.
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="main-social">
+            <table class="footer_table" align="center">
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>My Accounts</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="sub-social">
+                                <input type="image" src="S:\Sanket\My Web\Image\Github_Logo.png" alt="Github" onclick="insta()"/>
+                                <script>
+                                    function insta() { location.href = "https://github.com/sanket-164"; }
+                                </script>
+                            </div>
+                            <div class="sub-social">
+                                <input type="image" src="S:\Sanket\My Web\Image\instagram-logo.png" alt="Instagram" onclick="insta()" />
+                                <script>
+                                    function insta() { location.href = "https://instagram.com/sanket_164?igshid=MDM4ZDc5MmU="; }
+                                </script>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </footer>
+</body>
+
+</html>
