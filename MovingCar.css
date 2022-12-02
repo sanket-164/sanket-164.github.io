@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+}
+
+.startcar{
+    height: 100px;
+    width: 280px;
+    background-image: url(AudiWithoutTires.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+button{
+    height: 60px;
+    width: 180px;
+    font-weight: bold;
+    font-size: large;
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 2px;
+}
+
+.horn button{
+    position: absolute;
+    top: 91vh;
+    width:99%;
+    left:7px;
+}
+
+.sky{
+    height: 120vh;
+    width: 250%;
+    background-image: url(BackGround.webp);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: -338px;
+    animation: bgMove linear 5s infinite;
+}
+
+.track{
+    height: 15vh;
+    width: 120%;
+    background-image: url(Track.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 120vh;
+    animation: trackMove linear 3s infinite;
+    overflow: hidden;
+}
+
+.lari img{
+    float:left;
+}
+
+.lari{
+    width:200px;
+    background-size: cover;
+    position: absolute;
+    top: 68vh;
+    left: 300vh;
+    animation: lariMove 20s infinite;
+}
+
+.car{
+    height: 100px;
+    width: 280px;
+    background-image: url(AudiWithoutTires.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 67vh;
+    left: 1100px;
+    animation: carMove linear 20s infinite;
+}
+
+.wheel1 img{
+    width:50px;
+    position: relative;
+    top:60px;
+    left:25px;
+    animation: wheelRotation Linear .6s infinite;
+}
+
+.wheel2 img{
+    width:50px;
+    position: relative;
+    top: -15px;
+    left: 196px;
+    animation: wheelRotation Linear .6s infinite;
+}
+
+@keyframes wheelRotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carMove {
+    50%{
+        transform: translateX(80vw);
+    }
+    50%{
+        transform: translate(-70vw,3.5vw);
+    }
+}
+
+@keyframes trackMove {
+    100%{
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes lariMove {
+    100%{
+        transform: translateX(-200vw);
+    }
+}
+
+@keyframes bgMove {
+    100%{
+        transform: translateX(-129vw);
+    }
+}
+
+@keyframes carShake {
+    100%{
+        transform: translateY(2px);
+    }
+}
